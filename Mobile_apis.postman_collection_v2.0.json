@@ -1,0 +1,1283 @@
+{
+	"info": {
+		"_postman_id": "2cbbf945-2a44-4e6c-8065-f0d3fee0a7de",
+		"name": "Mobile_apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send Otp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/login/logintoken.php?value=8882023249&type=phone",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"login",
+						"logintoken.php"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "8882023249"
+						},
+						{
+							"key": "type",
+							"value": "phone"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Otp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/login/verifyotp.php?value=8882023249&type=phone&otp=179629",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"login",
+						"verifyotp.php"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "8882023249"
+						},
+						{
+							"key": "type",
+							"value": "phone"
+						},
+						{
+							"key": "otp",
+							"value": "179629"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reminders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=bde67f391aa2c2afa299aa3c709afd46&wsfunction=local_custom_pages_get_all_reminders&moodlewsrestformat=json",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "bde67f391aa2c2afa299aa3c709afd46"
+						},
+						{
+							"key": "wsfunction",
+							"value": "local_custom_pages_get_all_reminders"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login id pass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/login/token.php?username=may25&password=Test@123&service=local_mobile",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"login",
+						"token.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "may25"
+						},
+						{
+							"key": "password",
+							"value": "Test@123"
+						},
+						{
+							"key": "service",
+							"value": "local_mobile"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=dbf86bef483ed69423530eee27bf17ca&wsfunction=block_courses_get_courses&moodlewsrestformat=json&start=0&limit=0&userid=192",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "dbf86bef483ed69423530eee27bf17ca"
+						},
+						{
+							"key": "wsfunction",
+							"value": "block_courses_get_courses"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "0"
+						},
+						{
+							"key": "userid",
+							"value": "192"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get course contents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=tool_mobile_get_content&wstoken=f3e5ae1606f2165467a769f3d0e01758&component=mod_videofile&method=mobile_video_view&args[1][name]=cmid&args[1][value]=998&args[0][name]=courseid&args[0][value]=77&args[2][name]=userid&args[2][value]=192",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "tool_mobile_get_content"
+						},
+						{
+							"key": "wstoken",
+							"value": "f3e5ae1606f2165467a769f3d0e01758"
+						},
+						{
+							"key": "component",
+							"value": "mod_videofile"
+						},
+						{
+							"key": "method",
+							"value": "mobile_video_view"
+						},
+						{
+							"key": "args[1][name]",
+							"value": "cmid"
+						},
+						{
+							"key": "args[1][value]",
+							"value": "998"
+						},
+						{
+							"key": "args[0][name]",
+							"value": "courseid"
+						},
+						{
+							"key": "args[0][value]",
+							"value": "77"
+						},
+						{
+							"key": "args[2][name]",
+							"value": "userid"
+						},
+						{
+							"key": "args[2][value]",
+							"value": "192"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get course section content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=aa1460d0c3db5f1886241034e805b571&wsfunction=core_course_get_contents&moodlewsrestformat=json&courseid=190",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "aa1460d0c3db5f1886241034e805b571"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_course_get_contents"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "courseid",
+							"value": "190"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get zoom status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?wstoken=16b6b1d07c2d55e683aefaaf8c3758e3&wsfunction=mod_zoom_get_state&moodlewsrestformat=json&zoomid=9337",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "16b6b1d07c2d55e683aefaaf8c3758e3"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_zoom_get_state"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "zoomid",
+							"value": "9337"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get zoom url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?wstoken=16b6b1d07c2d55e683aefaaf8c3758e3&wsfunction=mod_zoom_grade_item_update&moodlewsrestformat=json&zoomid=9337",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "16b6b1d07c2d55e683aefaaf8c3758e3"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_zoom_grade_item_update"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "zoomid",
+							"value": "9337"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Program about detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=e1840b094651160338740dcb440243e4&wsfunction=block_paradiso_lpd_get_lpd_about&moodlewsrestformat=json&userid=176&programid=19",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e1840b094651160338740dcb440243e4"
+						},
+						{
+							"key": "wsfunction",
+							"value": "block_paradiso_lpd_get_lpd_about"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "userid",
+							"value": "176"
+						},
+						{
+							"key": "programid",
+							"value": "19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Learning path",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=e1840b094651160338740dcb440243e4&wsfunction=block_paradiso_lpd_get_lpd_info&moodlewsrestformat=json&userid=176",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "e1840b094651160338740dcb440243e4"
+						},
+						{
+							"key": "wsfunction",
+							"value": "block_paradiso_lpd_get_lpd_info"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "userid",
+							"value": "176"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get consents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=95ec5294e8a5041116e5960d545e843f&wsfunction=local_consent_form_get_consent_content&moodlewsrestformat=json",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "95ec5294e8a5041116e5960d545e843f"
+						},
+						{
+							"key": "wsfunction",
+							"value": "local_consent_form_get_consent_content"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mark consent true",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=3641a9ef8666d4e4bbf9e3a83127afea&wsfunction=local_consent_response&moodlewsrestformat=json&data[0][popupid]=5&data[0][ip]=101.1.1.1&data[0][status]=1",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "3641a9ef8666d4e4bbf9e3a83127afea"
+						},
+						{
+							"key": "wsfunction",
+							"value": "local_consent_response"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "data[0][popupid]",
+							"value": "5"
+						},
+						{
+							"key": "data[0][ip]",
+							"value": "101.1.1.1"
+						},
+						{
+							"key": "data[0][status]",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch forum discussion (activity)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_forum_get_forum_discussions&forumid=137&page=0&sortorder=1&wstoken=e7c2466a4197e9b093970449d72f4cfe&moodlewssettingfilter=true&moodlewssettingfileurl=true",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_get_forum_discussions"
+						},
+						{
+							"key": "forumid",
+							"value": "137"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "sortorder",
+							"value": "1"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7c2466a4197e9b093970449d72f4cfe"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send msg forum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_forum_add_discussion&forumid=136&subject=31 aug&message=msg text&options[0][name]=discussionsubscribe&options[0][value]=1&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=e7c2466a4197e9b093970449d72f4cfe",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_add_discussion"
+						},
+						{
+							"key": "forumid",
+							"value": "136"
+						},
+						{
+							"key": "subject",
+							"value": "31 aug"
+						},
+						{
+							"key": "message",
+							"value": "msg text"
+						},
+						{
+							"key": "options[0][name]",
+							"value": "discussionsubscribe"
+						},
+						{
+							"key": "options[0][value]",
+							"value": "1"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7c2466a4197e9b093970449d72f4cfe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toggle forum pin state",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_forum_set_pin_state&discussionid=3343&targetstate=0&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=e7c2466a4197e9b093970449d72f4cfe",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_set_pin_state"
+						},
+						{
+							"key": "discussionid",
+							"value": "3343"
+						},
+						{
+							"key": "targetstate",
+							"value": "0"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7c2466a4197e9b093970449d72f4cfe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toggle forum lock option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_forum_set_lock_state&discussionid=3343&targetstate=0&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=e7c2466a4197e9b093970449d72f4cfe",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_set_lock_state"
+						},
+						{
+							"key": "discussionid",
+							"value": "3343"
+						},
+						{
+							"key": "targetstate",
+							"value": "0"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7c2466a4197e9b093970449d72f4cfe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toggle forum star state",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_forum_toggle_favourite_state&discussionid=3343&targetstate=0&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=e7c2466a4197e9b093970449d72f4cfe",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_toggle_favourite_state"
+						},
+						{
+							"key": "discussionid",
+							"value": "3343"
+						},
+						{
+							"key": "targetstate",
+							"value": "0"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7c2466a4197e9b093970449d72f4cfe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch forums by course id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_forum_get_forums_by_courses&courseids[0]=77&wstoken=e7c2466a4197e9b093970449d72f4cfe&moodlewssettingfilter=true&moodlewssettingfileurl=true",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_forum_get_forums_by_courses"
+						},
+						{
+							"key": "courseids[0]",
+							"value": "77"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7c2466a4197e9b093970449d72f4cfe"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch calendar events monthly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=core_calendar_get_calendar_monthly_view&year=2022&month=1&mini=1&wstoken=c21dbfbcbc1fbacd3dfcad7fae75e6f3&moodlewssettingfilter=true&moodlewssettingfileurl=true",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_calendar_get_calendar_monthly_view"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						},
+						{
+							"key": "month",
+							"value": "1"
+						},
+						{
+							"key": "mini",
+							"value": "1"
+						},
+						{
+							"key": "wstoken",
+							"value": "c21dbfbcbc1fbacd3dfcad7fae75e6f3"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update activity completion status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&cmid=1058&completed=0&moodlewssettingfilter=true&moodlewssettingfileurl=true&wsfunction=core_completion_update_activity_completion_status_manually&wstoken=c21dbfbcbc1fbacd3dfcad7fae75e6f3",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "cmid",
+							"value": "1058"
+						},
+						{
+							"key": "completed",
+							"value": "0"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wsfunction",
+							"value": "core_completion_update_activity_completion_status_manually"
+						},
+						{
+							"key": "wstoken",
+							"value": "c21dbfbcbc1fbacd3dfcad7fae75e6f3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get feedbacks by course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_feedback_get_feedbacks_by_courses&courseids[0]=77&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=c21dbfbcbc1fbacd3dfcad7fae75e6f3",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_feedback_get_feedbacks_by_courses"
+						},
+						{
+							"key": "courseids[0]",
+							"value": "77"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "c21dbfbcbc1fbacd3dfcad7fae75e6f3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch assignment by course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_assign_get_assignments&courseids[0]=77&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=c21dbfbcbc1fbacd3dfcad7fae75e6f3",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_assign_get_assignments"
+						},
+						{
+							"key": "courseids[0]",
+							"value": "77"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "c21dbfbcbc1fbacd3dfcad7fae75e6f3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch assignment submitted status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_assign_get_submission_status&assignid=83&moodlewssettingfilter=false&moodlewssettingfileurl=false&wstoken=e7457726a265f8e4f63ff1c803612329",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_assign_get_submission_status"
+						},
+						{
+							"key": "assignid",
+							"value": "83"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "false"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "false"
+						},
+						{
+							"key": "wstoken",
+							"value": "e7457726a265f8e4f63ff1c803612329"
+						},
+						{
+							"key": "userid",
+							"value": "192",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save assigment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://vlearn.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=mod_assign_save_submission&assignmentid=19&plugindata[files_filemanager]=329168018&moodlewssettingfilter=true&moodlewssettingfileurl=true&wstoken=c21dbfbcbc1fbacd3dfcad7fae75e6f3",
+					"protocol": "https",
+					"host": [
+						"vlearn",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "mod_assign_save_submission"
+						},
+						{
+							"key": "assignmentid",
+							"value": "19"
+						},
+						{
+							"key": "plugindata[files_filemanager]",
+							"value": "329168018"
+						},
+						{
+							"key": "moodlewssettingfilter",
+							"value": "true"
+						},
+						{
+							"key": "moodlewssettingfileurl",
+							"value": "true"
+						},
+						{
+							"key": "wstoken",
+							"value": "c21dbfbcbc1fbacd3dfcad7fae75e6f3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get zoom recorded classes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?moodlewsrestformat=json&wsfunction=tool_mobile_get_content&wstoken=db522ce7dac82537c516510887ce3e32&component=mod_zoom&method=mobile_course_view&args[1][name]=cmid&args[1][value]=8450&args[0][name]=courseid&args[0][value]=79",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						},
+						{
+							"key": "wsfunction",
+							"value": "tool_mobile_get_content"
+						},
+						{
+							"key": "wstoken",
+							"value": "db522ce7dac82537c516510887ce3e32"
+						},
+						{
+							"key": "component",
+							"value": "mod_zoom"
+						},
+						{
+							"key": "method",
+							"value": "mobile_course_view"
+						},
+						{
+							"key": "args[1][name]",
+							"value": "cmid"
+						},
+						{
+							"key": "args[1][value]",
+							"value": "8450"
+						},
+						{
+							"key": "args[0][name]",
+							"value": "courseid"
+						},
+						{
+							"key": "args[0][value]",
+							"value": "79"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get account Access type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://beta.herovired.com/webservice/rest/server.php?wstoken=704cc167c246f3df75d309b4b49df6d6 &wsfunction=local_lock_view_type_get_access_type &userid=377&moodlewsrestformat=json",
+					"protocol": "https",
+					"host": [
+						"beta",
+						"herovired",
+						"com"
+					],
+					"path": [
+						"webservice",
+						"rest",
+						"server.php"
+					],
+					"query": [
+						{
+							"key": "wstoken",
+							"value": "704cc167c246f3df75d309b4b49df6d6 "
+						},
+						{
+							"key": "wsfunction",
+							"value": "local_lock_view_type_get_access_type "
+						},
+						{
+							"key": "userid",
+							"value": "377"
+						},
+						{
+							"key": "moodlewsrestformat",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
